@@ -17,7 +17,7 @@ The documentation in OpenAPI 3.0.0 format can be found [here](https://raw.github
 
 The response and request schemas from the API documentation are exported as JSON schema files in [`./schemas`](./schemas) can be included in JavaScript like this:
 
-    npm i git+https://github.com/nRFCloud/api.git#v1.0.0-preview.1
+    npm i "git+https://github.com/nRFCloud/api.git#v1.0.0-preview.1"
    
 ```javascript
 const {schemas} = require('@nrfcloud/api')
