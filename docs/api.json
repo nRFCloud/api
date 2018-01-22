@@ -3,7 +3,7 @@
   "info": {
     "title": "nRF Cloud",
     "version": "1.0.0-preview.1",
-    "description": "API definition for the <a href=\"https://nrfcloud.com\" target=\"_blank\" rel=\"noopener noreferrer\">nRF Cloud</a> REST API.<br> Note: This is a preview release and might be changed without notice.",
+    "description": "API definition for the <a href=\"https://nrfcloud.com\" target=\"_blank\" rel=\"noopener noreferrer\">nRF Cloud</a> REST API.<br><strong>Note:</strong> This is a preview release and might be changed without notice.<br><strong>Warning:</strong> Do not hardcode the endpoint listed below, but find the endpoint for your desired stage using a call to <a href=\"https://github.com/nRFCloud/meta\" target=\"_blank\" rel=\"noopener noreferrer\">meta.nrfcloud.com</a>.",
     "contact": {
       "name": "nRF Cloud",
       "url": "https://nrfcloud.com/",
