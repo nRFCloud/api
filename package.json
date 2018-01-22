@@ -40,6 +40,7 @@
     "README.md"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "tag": "preview"
   }
 }
