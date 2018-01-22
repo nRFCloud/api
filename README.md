@@ -1,4 +1,4 @@
-# nRF Cloud API ![API v1.0.0-preview.1](https://img.shields.io/badge/API-v1.0.0--preview.1-blue.svg) [![Swagger UI](https://img.shields.io/badge/Swagger-UI-orange.svg)](http://petstore.swagger.io/?url=https%3A%2F%2Fraw.githubusercontent.com%2FnRFCloud%2Fapi%2Fdocs%2Fmaster%2Fapi.json%3Fv1.0.0-preview.1)
+# nRF Cloud API [![API v1.0.0-preview.1](https://img.shields.io/badge/API-v1.0.0--preview.1-blue.svg)](https://raw.githubusercontent.com/nRFCloud/api/master/docs/api.json) [![Swagger UI](https://img.shields.io/badge/Swagger-UI-orange.svg)](http://petstore.swagger.io/?url=https%3A%2F%2Fraw.githubusercontent.com%2FnRFCloud%2Fapi%2Fmaster%2Fdocs%2Fapi.json%3Fv1.0.0-preview.1)
 
 [![npm preview version](https://img.shields.io/npm/v/@nrfcloud/api/preview.svg)](https://www.npmjs.com/package/@nrfcloud/api)
 [![Greenkeeper badge](https://badges.greenkeeper.io/nrfcloud/api.svg)](https://greenkeeper.io/)
