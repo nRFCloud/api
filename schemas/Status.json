@@ -1,0 +1,36 @@
+{
+  "title": "Status",
+  "description": "Describes the status of the system.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "./VersionedContext.json"
+    },
+    {
+      "properties": {
+        "maintenance": {
+          "description": "Whether the system is in maintenance mode.",
+          "example": false,
+          "type": "boolean"
+        },
+        "version": {
+          "description": "The global version of the system. This is merely a logical version identifier for the system as whole since individual services may have their own version scheme. This is a semantic version string: http://semver.org/",
+          "example": "1.0.0-beta.2",
+          "type": "string"
+        },
+        "time": {
+          "description": "Time of the status creation.",
+          "example": "2017-10-02T11:05:46.793Z",
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "maintenance",
+        "version",
+        "time"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "LinkedEntity",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "./VersionedContext.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "$links": {
+          "type": "array",
+          "description": "Links between entities",
+          "items": {
+            "$ref": "./Link.json"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "$links"
+      ]
+    }
+  ]
+}

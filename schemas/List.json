@@ -1,0 +1,32 @@
+{
+  "title": "List",
+  "type": "object",
+  "description": "Describes a list if items. Can contain links to e.g. fetch the next page in a result set.",
+  "allOf": [
+    {
+      "$ref": "./LinkedEntity.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "items": {
+          "type": "array",
+          "description": "Items in the list",
+          "items": {
+            "$ref": "./LinkedEntity.json"
+          }
+        },
+        "total": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of items for the query"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "items",
+        "total"
+      ]
+    }
+  ]
+}

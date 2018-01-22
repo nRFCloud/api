@@ -1,0 +1,25 @@
+{
+  "title": "ApiIndex",
+  "description": "Describes entry points of an API.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "./VersionedContext.json"
+    },
+    {
+      "properties": {
+        "links": {
+          "type": "array",
+          "description": "Links to entry points",
+          "items": {
+            "$ref": "./Link.json"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "links"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "title": "GatewayRegistrationResult",
+  "description": "Contains the credentials for the created Gateway",
+  "type": "object",
+  "properties": {
+    "gatewayId": {
+      "type": "string"
+    },
+    "clientCert": {
+      "type": "string"
+    },
+    "privateKey": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "gatewayId",
+    "clientCert",
+    "privateKey"
+  ]
+}

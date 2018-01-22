@@ -25,12 +25,9 @@ readFile(srcFile, 'utf-8')
       const indexJs = '"use strict";\n' +
         'Object.defineProperty(exports, "__esModule", { value: true });\n' +
         'exports.schemas = [\n' +
-        Object.keys(api.components.schemas).map(schemaName => `require('./schemas/${schemaName}.json')`).join(',\n') +
+        Object.keys(api.components.schemas).map(schemaName => `require('./${schemaName}.json')`).join(',\n') +
         '\n];'
-      return Promise.all([
-        writeFile('./dist/index.js', indexJs),
-        writeFile('./dist/index.d.ts', Object.keys(api.components.schemas).map(schemaName => `export * from './types/${schemaName}.d.ts';`).join('\n'))
-      ])
+      return writeFile('./schemas/index.js', indexJs)
     })
   )
 

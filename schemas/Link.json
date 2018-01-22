@@ -1,0 +1,36 @@
+{
+  "title": "Link",
+  "description": "Describes a link.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "./VersionedContext.json"
+    },
+    {
+      "properties": {
+        "href": {
+          "description": "URL to retrieve the link",
+          "example": "https://meta.nrfcloud.com/",
+          "type": "string",
+          "pattern": "^https?:\\/\\/(((?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9])|((?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)))(:(6553[0-5]|655[0-2]\\d|65[0-4]\\d\\d|6[0-4]\\d{3}|[1-5]\\d{4}|[1-9]\\d{0,3}|0))?(\\/[-a-zA-Z0-9@:%_+.,~?&/=()]*)*(#(?:[^#^[\\]{}\\\\\"<>%\\s]|%[0-9a-f]{2})*)*$"
+        },
+        "subject": {
+          "description": "Context of the linked item",
+          "example": "https://github.com/nRFCloud/models#ApiIndex",
+          "type": "string",
+          "pattern": "^https?:\\/\\/(((?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9])|((?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)))(:(6553[0-5]|655[0-2]\\d|65[0-4]\\d\\d|6[0-4]\\d{3}|[1-5]\\d{4}|[1-9]\\d{0,3}|0))?(\\/[-a-zA-Z0-9@:%_+.,~?&/=()]*)*(#(?:[^#^[\\]{}\\\\\"<>%\\s]|%[0-9a-f]{2})*)*$"
+        },
+        "rel": {
+          "description": "Label of the relation",
+          "example": "self",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "href",
+        "subject"
+      ]
+    }
+  ]
+}
