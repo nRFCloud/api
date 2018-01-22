@@ -22,11 +22,11 @@ readFile(srcFile, 'utf-8')
       }))
     .then(() => {
       // Write index files
-      const indexJs = '"use strict";\n' +
-        'Object.defineProperty(exports, "__esModule", { value: true });\n' +
+      const indexJs = '\'use strict\'\n' +
+        'Object.defineProperty(exports, \'__esModule\', { value: true })\n' +
         'exports.schemas = [\n' +
-        Object.keys(api.components.schemas).map(schemaName => `require('./${schemaName}.json')`).join(',\n') +
-        '\n];'
+        Object.keys(api.components.schemas).map(schemaName => `  require('./${schemaName}.json')`).join(',\n') +
+        '\n]\n'
       return writeFile('./schemas/index.js', indexJs)
     })
   )

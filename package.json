@@ -6,7 +6,6 @@
   "scripts": {
     "commitmsg": "commitlint -e",
     "semantic-release": "semantic-release",
-    "postinstall": "make dist",
     "lint": "standard",
     "precommit": "npm run lint"
   },
