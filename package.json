@@ -1,7 +1,7 @@
 {
   "name": "@nrfcloud/api",
   "version": "0.0.0-development",
-  "description": "Provides the API documentation and SDK for the nRFCloud.com REST API.",
+  "description": "Provides the API documentation for the nRFCloud.com REST API.",
   "main": "schemas/index.js",
   "scripts": {
     "commitmsg": "commitlint -e",

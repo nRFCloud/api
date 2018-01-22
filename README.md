@@ -7,7 +7,7 @@
 [![Build Status](https://travis-ci.org/nRFCloud/api.svg?branch=master)](https://travis-ci.org/nRFCloud/api)
 [![Greenkeeper badge](https://badges.greenkeeper.io/nRFCloud/api.svg)](https://greenkeeper.io/)
 
-Provides the API documentation and SDK for the [nRFCloud.com](https://nrfcloud.com/) REST API.
+Provides the API documentation for the [nRFCloud.com](https://nrfcloud.com/) REST API.
 
 ## API Documentation
 
