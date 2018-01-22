@@ -1,4 +1,4 @@
-dist: dist/schemas dist/types
+dist: dist/schemas
 
 dist/schemas: docs/api.json
 	@mkdir -p $@
