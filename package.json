@@ -7,7 +7,8 @@
     "commitmsg": "commitlint -e",
     "semantic-release": "semantic-release",
     "postinstall": "make dist",
-    "lint": "standard"
+    "lint": "standard",
+    "precommit": "npm run lint"
   },
   "repository": {
     "type": "git",
