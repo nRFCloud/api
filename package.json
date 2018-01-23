@@ -2,7 +2,7 @@
   "name": "@nrfcloud/api",
   "version": "1.0.0-preview.1",
   "description": "Provides the API documentation for the nRFCloud.com REST API.",
-  "main": "schemas/index.js",
+  "main": "index.js",
   "scripts": {
     "commitmsg": "commitlint -e",
     "semantic-release": "semantic-release",

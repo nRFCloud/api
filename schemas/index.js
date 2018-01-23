@@ -1,6 +1,6 @@
 'use strict'
 Object.defineProperty(exports, '__esModule', { value: true })
-exports.schemas = [
+exports.default = [
   require('./ApiIndex.json'),
   require('./HttpProblem.json'),
   require('./Link.json'),
