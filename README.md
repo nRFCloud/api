@@ -9,6 +9,8 @@
 
 Provides the API documentation for the [nRFCloud.com](https://nrfcloud.com/) REST API.
 
+> :warning: **This is a preview release and might be changed without notice.**
+
 ## API Documentation
 
 The documentation in OpenAPI 3.0.0 format can be found [here](https://raw.githubusercontent.com/nRFCloud/api/master/docs/api.json). You can open it in the [Swagger API viewer](http://petstore.swagger.io/?url=https%3A%2F%2Fraw.githubusercontent.com%2FnRFCloud%2Fapi%2Fmaster%2Fdocs%2Fapi.json%3Fv1.0.0-preview.1) to execute requests agains the API right in your browser.
