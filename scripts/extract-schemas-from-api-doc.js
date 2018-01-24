@@ -24,7 +24,7 @@ readFile(srcFile, 'utf-8')
       // Write index files
       const indexJs = '\'use strict\'\n' +
         'Object.defineProperty(exports, \'__esModule\', { value: true })\n' +
-        'exports.schemas = [\n' +
+        'exports.default = [\n' +
         Object.keys(api.components.schemas).map(schemaName => `  require('./${schemaName}.json')`).join(',\n') +
         '\n]\n'
       return writeFile('./schemas/index.js', indexJs)
