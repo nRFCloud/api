@@ -292,7 +292,7 @@
           }
         ],
         "responses": {
-          "200": {
+          "201": {
             "description": "The certificate for the newly create gateway",
             "headers": {
               "Access-Control-Allow-Origin": {
