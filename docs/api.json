@@ -331,6 +331,7 @@
         "parameters": [
           {
             "name": "create",
+            "description": "Set this parameter to `true` to create a new tenant if no tenant exists for the authenticated user",
             "in": "query",
             "schema": {
               "type": "boolean"
@@ -424,6 +425,7 @@
         "parameters": [
           {
             "name": "tenantId",
+            "description": "Id of the tenant to register the gateway for",
             "required": true,
             "in": "path",
             "schema": {
