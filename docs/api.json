@@ -334,7 +334,7 @@
             "description": "Set this parameter to `true` to create a new tenant if no tenant exists for the authenticated user",
             "in": "query",
             "schema": {
-              "type": "boolean"
+              "type": "string"
             }
           }
         ],
