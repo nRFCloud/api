@@ -8,5 +8,7 @@ exports.default = [
   require('./List.json'),
   require('./Status.json'),
   require('./VersionedContext.json'),
-  require('./GatewayRegistrationResult.json')
+  require('./GatewayRegistrationResult.json'),
+  require('./Tenant.json'),
+  require('./TenantsList.json')
 ]

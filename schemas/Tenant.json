@@ -1,0 +1,38 @@
+{
+  "title": "Tenant",
+  "description": "A tenant",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier representing the tenant."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the tenant"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when tenant was created."
+    },
+    "createdBy": {
+      "type": "string",
+      "description": "The user that created the tenant."
+    },
+    "users": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "createdAt",
+    "createdBy",
+    "users"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "title": "TenantsList",
+  "description": "A list of tenants",
+  "type": "array",
+  "items": {
+    "$ref": "./Tenant.json"
+  }
+}

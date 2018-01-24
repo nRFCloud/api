@@ -269,10 +269,150 @@
           "clientCert",
           "privateKey"
         ]
+      },
+      "Tenant": {
+        "title": "Tenant",
+        "description": "A tenant",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier representing the tenant."
+          },
+          "name": {
+            "type": "string",
+            "description": "The name of the tenant"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp when tenant was created."
+          },
+          "createdBy": {
+            "type": "string",
+            "description": "The user that created the tenant."
+          },
+          "users": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "createdAt",
+          "createdBy",
+          "users"
+        ]
+      },
+      "TenantsList": {
+        "title": "TenantsList",
+        "description": "A list of tenants",
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/Tenant"
+        }
       }
     }
   },
   "paths": {
+    "/tenants": {
+      "post": {
+        "summary": "Fetch user's tenant",
+        "tags": [
+          "Account",
+          "Gateway"
+        ],
+        "description": "Returns the tenants for a user (and creating them if they do not exist)",
+        "operationId": "listTenants",
+        "parameters": [
+          {
+            "name": "create",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The tenants for the authenticated user",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "description": "Allow any origin to access this resource.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TenantsList"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The supplied request data was invalid. Check the response body for details.",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "description": "Allow any origin to access this resource.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HttpProblem"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "An entity was not found. Check the response body for details.",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "description": "Allow any origin to access this resource.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HttpProblem"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "An internal error occurred. Check the response body for details.",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "description": "Allow any origin to access this resource.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HttpProblem"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/tenants/{tenantId}/gateways": {
       "post": {
         "summary": "Register new Gateway",
@@ -293,7 +433,7 @@
         ],
         "responses": {
           "201": {
-            "description": "The certificate for the newly create gateway",
+            "description": "The certificate for the newly created gateway",
             "headers": {
               "Access-Control-Allow-Origin": {
                 "description": "Allow any origin to access this resource.",
