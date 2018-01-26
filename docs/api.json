@@ -357,6 +357,24 @@
               }
             }
           },
+          "201": {
+            "description": "A list with the the tenant which was just created.",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "description": "Allow any origin to access this resource.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TenantsList"
+                }
+              }
+            }
+          },
           "400": {
             "description": "The supplied request data was invalid. Check the response body for details.",
             "headers": {
