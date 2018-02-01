@@ -7,12 +7,13 @@ const {promisify} = require('util')
 const readFile = promisify(readFileAsync)
 const writeFile = promisify(writeFileAsync)
 const path = require('path')
+const yaml = require('js-yaml')
 
 const srcFile = process.argv[process.argv.length - 2]
 const targetDir = process.argv[process.argv.length - 1]
 
 readFile(srcFile, 'utf-8')
-  .then(JSON.parse)
+  .then(yaml.safeLoad)
   .then(api => Promise
     .all(
       Object.keys(api.components.schemas).map(schemaName => {

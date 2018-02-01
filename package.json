@@ -7,7 +7,8 @@
     "commitmsg": "commitlint -e",
     "semantic-release": "semantic-release",
     "lint": "standard",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "prepublishOnly": "make dist/api.json"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "@commitlint/cli": "^6.0.2",
     "@commitlint/config-angular": "^6.0.2",
     "husky": "^0.14.3",
+    "js-yaml": "^3.10.0",
     "semantic-release": "^12.2.4",
     "standard": "^10.0.3"
   },

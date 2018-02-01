@@ -1,4 +1,4 @@
-# nRF Cloud API [![API v1.0.0-preview.1](https://img.shields.io/badge/API-v1.0.0--preview.1-blue.svg)](https://raw.githubusercontent.com/nRFCloud/api/master/docs/api.json) [![Swagger UI](https://img.shields.io/badge/Swagger-UI-orange.svg)](http://petstore.swagger.io/?url=https%3A%2F%2Fraw.githubusercontent.com%2FnRFCloud%2Fapi%2Fmaster%2Fdocs%2Fapi.json%3Fv1.0.0-preview.1)
+# nRF Cloud API [![API v1.0.0-preview.1](https://img.shields.io/badge/API-v1.0.0--preview.1-blue.svg)](https://raw.githubusercontent.com/nRFCloud/api/master/docs/api.yaml) [![Swagger UI](https://img.shields.io/badge/Swagger-UI-orange.svg)](http://petstore.swagger.io/?url=https%3A%2F%2Fraw.githubusercontent.com%2FnRFCloud%2Fapi%2Fmaster%2Fdocs%2Fapi.yaml%3Fv1.0.0-preview.1)
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/nrfcloud/api.svg)](https://greenkeeper.io/)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
@@ -13,7 +13,7 @@ Provides the API documentation for the [nRFCloud.com](https://nrfcloud.com/) RES
 
 ## API Documentation
 
-The documentation in OpenAPI 3.0.0 format can be found [here](https://raw.githubusercontent.com/nRFCloud/api/master/docs/api.json). You can open it in the [Swagger API viewer](http://petstore.swagger.io/?url=https%3A%2F%2Fraw.githubusercontent.com%2FnRFCloud%2Fapi%2Fmaster%2Fdocs%2Fapi.json%3Fv1.0.0-preview.1) to execute requests agains the API right in your browser.
+The documentation in OpenAPI 3.0.0 format can be found [here](https://raw.githubusercontent.com/nRFCloud/api/master/docs/api.yaml). You can open it in the [Swagger API viewer](http://petstore.swagger.io/?url=https%3A%2F%2Fraw.githubusercontent.com%2FnRFCloud%2Fapi%2Fmaster%2Fdocs%2Fapi.yaml%3Fv1.0.0-preview.1) to execute requests agains the API right in your browser.
 
 ## JSON schema files
 
