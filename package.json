@@ -31,7 +31,7 @@
     "husky": "^0.14.3",
     "js-yaml": "^3.10.0",
     "semantic-release": "^12.2.4",
-    "standard": "^10.0.3"
+    "standard": "^11.0.0"
   },
   "files": [
     "schemas",
