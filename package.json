@@ -33,7 +33,7 @@
     "js-yaml": "^3.11.0",
     "semantic-release": "^15.0.2",
     "standard": "^11.0.0",
-    "travis-deploy-once": "^4.4.0"
+    "travis-deploy-once": "^5.0.0"
   },
   "files": [
     "dist",
