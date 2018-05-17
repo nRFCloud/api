@@ -1,4 +1,4 @@
-# nRF Cloud API [![API v1.0.0-preview.1](https://img.shields.io/badge/API-v1.0.0--preview.1-blue.svg)](https://raw.githubusercontent.com/nRFCloud/api/preview/docs/api.yaml) [![Swagger UI](https://img.shields.io/badge/Swagger-UI-orange.svg)](http://petstore.swagger.io/?url=https%3A%2F%2Fraw.githubusercontent.com%2FnRFCloud%2Fapi%2Fpreview%2Fdocs%2Fapi.yaml%3Fv1.0.0-preview.1)
+# ![DRAFT](https://img.shields.io/badge/maturity-DRAFT-red.svg) nRF Cloud API [![API v1.0.0-preview.1](https://img.shields.io/badge/API-v1.0.0--preview.1-blue.svg)](https://raw.githubusercontent.com/nRFCloud/api/preview/docs/api.yaml) [![Swagger UI](https://img.shields.io/badge/Swagger-UI-orange.svg)](http://petstore.swagger.io/?url=https%3A%2F%2Fraw.githubusercontent.com%2FnRFCloud%2Fapi%2Fpreview%2Fdocs%2Fapi.yaml%3Fv1.0.0-preview.1)
 
 [![Build Status](https://travis-ci.org/nRFCloud/api.svg?branch=preview)](https://travis-ci.org/nRFCloud/api)
 [![npm preview version](https://img.shields.io/npm/v/@nrfcloud/api/preview.svg)](https://www.npmjs.com/package/@nrfcloud/api)  
@@ -10,6 +10,8 @@
 Provides the API documentation for the [nRFCloud.com](https://nrfcloud.com/) REST API.
 
 > :warning: **This is a preview release and might be changed without notice.**
+
+> :information_source: **This documentation currently does not reflect the actual API used on nrfcloud.com.** This project is a proof-of-concept.
 
 ## API Documentation
 
