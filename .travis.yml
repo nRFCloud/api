@@ -13,7 +13,7 @@ install:
   - npm prune
 before_script: greenkeeper-lockfile-update
 after_script: greenkeeper-lockfile-upload
-after_success: npm run travis-deploy-once "npm run semantic-release"
+after_success: npx travis-deploy-once "npx semantic-release"
 script:
   - npm run lint
 branches:
